@@ -11,7 +11,7 @@ function Filter({ filter, setFilter }) {
                     type="text"
                     name='filter'
                     value={filter}
-                    onChange={setFilter}
+                    onChange={event => { setFilter(event.currentTarget.value) }}
                     className={css.input}
                     />
                 </label>
